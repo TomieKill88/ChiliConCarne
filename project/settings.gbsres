@@ -21,10 +21,10 @@
   ],
   "defaultSpritePaletteIds": [
     "default-sprite",
-    "default-sprite",
-    "default-sprite",
-    "default-sprite",
-    "default-sprite",
+    "3e38d386-68cf-4b65-a7c0-687c8fa188d3",
+    "6db6c346-2962-4d90-ac79-5f6dac2a6042",
+    "d408240b-46b7-491e-a3fc-a98e5d743910",
+    "4be1a531-e76f-4324-be82-6af162d2447e",
     "default-sprite",
     "default-sprite",
     "default-sprite"
@@ -81,7 +81,7 @@
   "customControlsSelect": [
     "Shift"
   ],
-  "colorMode": "mono",
+  "colorMode": "color",
   "generateDebugFilesEnabled": false,
   "compilerPreset": 3000,
   "scriptEventPresets": {},

@@ -1,4 +1,25 @@
 {
   "_resourceType": "variables",
-  "variables": []
+  "variables": [
+    {
+      "id": "0",
+      "name": "Bubble",
+      "symbol": "var_bubble"
+    },
+    {
+      "id": "1",
+      "name": "TimerModifier",
+      "symbol": "var_timermodifier"
+    },
+    {
+      "id": "2",
+      "name": "AlreadyInit",
+      "symbol": "var_alreadyinit"
+    },
+    {
+      "id": "3",
+      "name": "GameOver",
+      "symbol": "var_gameover"
+    }
+  ]
 }

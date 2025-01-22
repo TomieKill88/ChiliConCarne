@@ -1,0 +1,40 @@
+{
+  "_resourceType": "script",
+  "id": "7244b840-354e-400e-8775-706c6d5f545c",
+  "name": "TimedEventTest",
+  "description": "Testing timed event to decrease variable",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "0",
+              "operation": "sub",
+              "other": "var",
+              "vectorY": "1",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": true,
+              "__collapse": false
+            },
+            "id": "cfd78598-b5ec-4140-bf1c-5c194192a0a9"
+          }
+        ]
+      },
+      "id": "32964d1d-55af-41a6-b887-02f4f6c71092"
+    }
+  ]
+}
