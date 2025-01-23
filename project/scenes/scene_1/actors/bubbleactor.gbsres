@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "a12589da-a419-42a9-9cff-a57f10ceaf69",
-  "name": "",
+  "name": "BubbleActor",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "bd7d6d9f-69dc-471c-8703-3df12c55b2ce",
@@ -108,7 +108,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 4,
+  "x": 3,
   "y": 5,
   "_index": 0
 }

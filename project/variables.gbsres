@@ -20,6 +20,21 @@
       "id": "3",
       "name": "GameOver",
       "symbol": "var_gameover"
+    },
+    {
+      "id": "4",
+      "name": "Pumping",
+      "symbol": "var_pumping"
+    },
+    {
+      "id": "5",
+      "name": "JustOnce",
+      "symbol": "var_justonce"
+    },
+    {
+      "id": "6",
+      "name": "OnPump",
+      "symbol": "var_onpump"
     }
   ]
 }
