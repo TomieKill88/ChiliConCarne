@@ -1,8 +1,8 @@
 {
   "_resourceType": "script",
   "id": "7244b840-354e-400e-8775-706c6d5f545c",
-  "name": "TimedEventTest",
-  "description": "Testing timed event to decrease variable",
+  "name": "TimedEventBubbleVar",
+  "description": "Timed event to decrease variable",
   "variables": {},
   "actors": {},
   "symbol": "script_1",

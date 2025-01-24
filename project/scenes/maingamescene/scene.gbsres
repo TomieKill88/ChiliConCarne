@@ -3,10 +3,10 @@
   "id": "51a79c18-2fae-491d-95ad-33c361b9da4b",
   "_index": 0,
   "type": "TOPDOWN",
-  "name": "Scene 1",
+  "name": "MainGameScene",
   "symbol": "scene_1",
-  "x": 270,
-  "y": 197,
+  "x": 352,
+  "y": 56,
   "width": 20,
   "height": 18,
   "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -30,5 +30,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "003f+0f4+0010+0f!002+0f!00f+0f2+002+0f!00e+0f!005+0f2+00b+0f2+006+0f!0013+0f!007+0f4+008+0f!007+0f!009+0f2+008+0f!003+0f6+00a+0f!0013+0f4+0064+"
+  "collisions": "003f+0f4+0010+0f!002+0f!00f+0f2+002+0f!00e+0f!005+0f2+00b+0f2+006+0f!0013+0f!007+0f4+008+0f!007+0f!009+0f2+008+0f!003+0f6+00a+0f!002+0f!0078+"
 }

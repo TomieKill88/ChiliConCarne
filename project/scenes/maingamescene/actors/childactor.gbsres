@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "d86ae4f2-3a14-4bd3-8af9-21b6da1d7a05",
+  "name": "ChildActor",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "952921e7-7704-47f9-a7ea-2c6b0357a291",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_5",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I'm an innocent\nkid! With hopes\nand dreams!",
+          "My whole life is \nahead of me!",
+          "I sure hope no one\neats me today!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7a904a68-7a89-4dae-8986-233392d57f05"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 17,
+  "y": 11,
+  "_index": 5
+}
