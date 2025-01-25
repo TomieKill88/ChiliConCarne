@@ -27,7 +27,7 @@
           "type": "number",
           "value": 0
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "e420c934-3d10-466b-a667-5d661ef44028"
     },
