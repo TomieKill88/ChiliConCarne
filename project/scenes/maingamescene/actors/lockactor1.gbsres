@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "1797b68f-5ab7-414c-b92d-13983a7b5d31",
+  "id": "8757bcd3-58ff-4b65-b046-227beb61de7d",
   "name": "LockActor1",
   "frame": 0,
   "animate": false,
@@ -14,14 +14,142 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_2",
-  "script": [],
+  "symbol": "actor_4",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This lock needs a\nkey."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "54a2abf5-238b-48b5-ac93-a6c86225f669"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "But you have a\nhammer. And that's\nlike a key, but",
+                "better.\nSmash lock?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "0e9c2063-6af4-47d9-97fd-86910579551c"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "7",
+              "items": 2,
+              "option1": "Smash!",
+              "option2": "How barbaric!",
+              "option3": "",
+              "option4": "",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": true,
+              "__collapse": true
+            },
+            "id": "dd700ee4-e068-4273-8d8e-00472f5abe63"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "7"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "1a688706-9495-43ad-afba-339c8e86f2c1"
+                }
+              ],
+              "false": []
+            },
+            "id": "fa4dd818-2009-4ce6-a2de-73bc2b005cb5"
+          }
+        ],
+        "false": []
+      },
+      "id": "b14b234b-3f8b-430d-8bc0-6e3569782a70"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 14,
-  "y": 8,
-  "_index": 2
+  "x": 13,
+  "y": 13,
+  "_index": 4
 }

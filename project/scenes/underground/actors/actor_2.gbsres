@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "1797b68f-5ab7-414c-b92d-13983a7b5d31",
-  "name": "LockActor3",
+  "id": "39e73f15-61ef-4dae-928e-3141b5e57ac6",
+  "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "5de9e462-1f7e-468a-b4fd-179ccd11663d",
+  "spriteSheetId": "4d0eb8c0-5a94-4d0c-be60-50d38bf5ad55",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,14 +14,22 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_2",
-  "script": [],
+  "symbol": "actor_7",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_PUSH",
+      "args": {
+        "continue": false
+      },
+      "id": "1ea8d7d1-fb38-43fd-a46e-cfea979d7099"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 13,
-  "y": 9,
-  "_index": 2
+  "x": 6,
+  "y": 11,
+  "_index": 1
 }

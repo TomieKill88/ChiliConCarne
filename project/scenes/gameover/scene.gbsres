@@ -14,40 +14,92 @@
   "autoFadeSpeed": 1,
   "symbol": "scene_4",
   "x": 352,
-  "y": 248,
+  "y": 240,
   "script": [
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
-        "actorId": "$self$"
+        "actorId": "$self$",
+        "__collapse": true
       },
       "id": "a4ac92c3-54fd-4d61-8306-c19974649f36"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "You fool!!!\nA child just died\nbecause of you!!",
-          "Now go back, and\ntry to not kill\nanother one!!"
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
       },
-      "id": "3ae8ca9f-c087-4b17-9c09-270cde5e3e59"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "OMG! You woke the\nogre up!\nYou monster!!",
+                "Continue?\nA kid got eaten \nbecause of you,",
+                "and you want to do\nit again?? You\nmake me SICK!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "b095c25c-104d-410a-8df3-64dd6c8c6ee2"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You fool!!!\nA child just died\nbecause of you!!",
+                "Now go back, and\ntry to not kill\nanother one!!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "3ae8ca9f-c087-4b17-9c09-270cde5e3e59"
+          }
+        ]
+      },
+      "id": "2987c6cc-8cf5-4b1f-ae47-56bd42fc8875"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -62,7 +114,8 @@
           "value": 0
         },
         "direction": "",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__collapse": true
       },
       "id": "b19c9c5b-2fb1-48a7-a728-6423e2ab4e66"
     }
@@ -70,5 +123,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "6e5e1442-a64d-4acd-8b3a-ead262b79924"
+  "playerSpriteSheetId": "6e5e1442-a64d-4acd-8b3a-ead262b79924",
+  "autoFadeEventCollapse": true
 }

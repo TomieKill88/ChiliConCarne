@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "008f3420-cb58-4e05-9488-b33deec98279",
+  "_index": 5,
+  "name": "Underground",
+  "backgroundId": "e16aa5ff-7e97-476d-bba3-bcf95eac8c0c",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0092+0f2+002+0f2+00d+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00c+0f!006+0f!00d+0f2+002+0f2+0044+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_6",
+  "x": 544,
+  "y": 240,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6e5e1442-a64d-4acd-8b3a-ead262b79924"
+}

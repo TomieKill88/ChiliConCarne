@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "982d8e09-b873-4ed0-ba4a-9d0d41f89ea5",
+  "name": "OgreCave",
+  "symbol": "bg_ogrecave",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "OgreCave.png",
+  "tileColors": ""
+}

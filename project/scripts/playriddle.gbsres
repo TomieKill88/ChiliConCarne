@@ -1,0 +1,165 @@
+{
+  "_resourceType": "script",
+  "id": "6bb0ad00-d359-41b1-95dd-c94afc5d240c",
+  "name": "PlayRiddle",
+  "description": "Play riddle for lock 2",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Lock"
+    }
+  },
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"What is never\nborrowed, but\noften returned?\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "02096c5b-d987-4753-b2bb-1544a6c50368"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "8",
+        "items": 4,
+        "option1": "A gift",
+        "option2": "A smile",
+        "option3": "A 'thank you'",
+        "option4": "A check",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "9631493b-1c57-4452-a827-026f8859a9e9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "\"Correct! Wow, you\nare smarter than\nyou look!\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "79de6a79-5353-452c-a0cb-3f6e29e2bd4d"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "788c49ac-d412-45d5-a1e5-f3b5384f266e"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "5f21e3b9-47be-47c5-bb63-39462fb59d0d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "\"What? No!Are you\nserious??\nUgh, screw this!\"",
+                "The lock led out\nan ear piercing\nscream."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "113f262d-0616-49f6-8856-7757a40d3641"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "8c6ac278-4ba0-4e58-b390-56c741167709"
+          }
+        ]
+      },
+      "id": "fcb19b4f-91a7-49d6-ae03-6f285377e679"
+    }
+  ]
+}

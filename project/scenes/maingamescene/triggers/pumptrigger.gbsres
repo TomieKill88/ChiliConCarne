@@ -3,7 +3,7 @@
   "id": "97af7fe0-a4a0-4d37-af66-9aa787bf3634",
   "name": "PumpTrigger",
   "prefabId": "",
-  "x": 9,
+  "x": 10,
   "y": 3,
   "symbol": "trigger_0",
   "prefabScriptOverrides": {},

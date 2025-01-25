@@ -52,7 +52,7 @@
             "value": "V5"
           }
         },
-        "__collapseElse": false,
+        "__collapseElse": true,
         "__collapse": false
       },
       "children": {
@@ -62,7 +62,8 @@
             "args": {
               "actorId": "0",
               "spriteStateId": "GameOver",
-              "loopAnim": true
+              "loopAnim": true,
+              "__collapse": true
             },
             "id": "7cbfe1c3-0f1e-48bc-8220-59a51db391e6"
           },
@@ -74,7 +75,7 @@
                 "type": "direction",
                 "value": "up"
               },
-              "__collapse": false
+              "__collapse": true
             },
             "id": "d3ca8a44-1ada-41f1-9878-597dfb1231a6"
           },
@@ -87,6 +88,16 @@
               }
             },
             "id": "03dc2e61-d388-43c9-90a0-9ebe1e327c4f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "2",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "c564293c-dc57-4dfa-aa6d-ad4b931b69e1"
           }
         ],
         "false": [
@@ -105,7 +116,7 @@
                 }
               },
               "__collapseElse": false,
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [

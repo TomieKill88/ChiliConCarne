@@ -9,7 +9,7 @@
   "y": 56,
   "width": 20,
   "height": 18,
-  "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+  "backgroundId": "982d8e09-b873-4ed0-ba4a-9d0d41f89ea5",
   "tilesetId": "",
   "paletteIds": [
     "",
@@ -25,10 +25,70 @@
         "customEventId": "7244b840-354e-400e-8775-706c6d5f545c"
       },
       "id": "232a2d7e-d4df-4538-85d6-3c0dd63e0b58"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "7"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "8757bcd3-58ff-4b65-b046-227beb61de7d"
+            },
+            "id": "5645e06b-1b7b-4ba5-ad17-6a6178e7b9da"
+          }
+        ],
+        "false": []
+      },
+      "id": "9f72f466-2c9e-4bcf-a1bb-2a48d10179cc"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "9"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "c49b9626-779a-4087-9327-f94419ea6705"
+            },
+            "id": "eba7e2fc-383a-47e7-acf2-747517979ce2"
+          }
+        ],
+        "false": []
+      },
+      "id": "a736e0db-4e01-402b-88bb-a014de94604d"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "003f+0f4+0010+0f!002+0f!00f+0f2+002+0f!00e+0f!005+0f2+00b+0f2+006+0f!0013+0f!007+0f4+008+0f!007+0f!009+0f2+008+0f!003+0f6+00a+0f!002+0f!0078+"
+  "collisions": "001e+0f9+00a+0f!009+0f!0013+0f!0013+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f!007+0f!007+0f4+002+0f6+008+0f!004+0f!00e+0f!004+0f!00e+0f!002+0f!00!0f!0012+0f2+0012+0f2+0012+0f2+0012+0f!00!0f8+002+0f8+00!"
 }
