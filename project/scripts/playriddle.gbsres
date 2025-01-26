@@ -117,6 +117,19 @@
               "actorId": "0"
             },
             "id": "5f21e3b9-47be-47c5-bb63-39462fb59d0d"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "c2806a3e-7d57-44c3-9ae9-a54e083653dd",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "73098593-83cc-4491-92d5-c5f39c7736d0"
           }
         ],
         "false": [

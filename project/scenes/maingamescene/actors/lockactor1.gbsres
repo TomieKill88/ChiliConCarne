@@ -71,7 +71,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -140,6 +140,19 @@
                   },
                   "children": {
                     "true": [
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "c2806a3e-7d57-44c3-9ae9-a54e083653dd",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0
+                        },
+                        "id": "faa4ecae-2f1e-4191-8ab4-66023988a4fc"
+                      },
                       {
                         "command": "EVENT_ACTOR_DEACTIVATE",
                         "args": {

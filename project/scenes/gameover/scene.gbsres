@@ -17,10 +17,18 @@
   "y": 240,
   "script": [
     {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "9629a31f-178f-44e8-9e6c-e03b5ecf77c9",
+        "__collapse": true
+      },
+      "id": "5d033806-31f2-4dbc-88e7-dcb10ef98534"
+    },
+    {
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "a4ac92c3-54fd-4d61-8306-c19974649f36"
     },
