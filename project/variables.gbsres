@@ -52,6 +52,11 @@
       "symbol": "var_lock2opened"
     },
     {
+      "id": "10",
+      "name": "ChildFreed",
+      "symbol": "var_childfreed"
+    },
+    {
       "id": "3a8336ce-85ba-4092-ab22-0e3a4e7f5aa4__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
