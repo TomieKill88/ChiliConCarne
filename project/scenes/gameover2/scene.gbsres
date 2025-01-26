@@ -1,0 +1,75 @@
+{
+  "_resourceType": "scene",
+  "id": "0a414d84-f171-4fc8-ab1b-c772c9c32094",
+  "_index": 6,
+  "name": "GameOver2",
+  "backgroundId": "94b258d9-66cc-4ea8-922f-7ee62180d6a6",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 352,
+  "y": 424,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "8bab0d4d-615e-4a96-9beb-d2d3921d419c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The child went to\nfulfill his dream,\nof World",
+          "Domination, and\nruled with a \nbrutal iron fist.",
+          "And now you know\nwhy no one wanted\nto save this kid."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "445027b0-c642-4022-a1a9-3411122355b2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3c77caa9-7da8-4736-b612-cc7eb606f6a0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "52bbd596-d674-48a7-9ad2-56c733aaefcc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "6e5e1442-a64d-4acd-8b3a-ead262b79924"
+}

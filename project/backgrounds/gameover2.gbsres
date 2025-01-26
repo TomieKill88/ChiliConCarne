@@ -1,13 +1,13 @@
 {
   "_resourceType": "background",
-  "id": "41646330-da3a-4eeb-b3b0-b110f1b9a826",
-  "name": "outside",
-  "symbol": "bg_outside",
+  "id": "94b258d9-66cc-4ea8-922f-7ee62180d6a6",
+  "name": "GameOver2",
+  "symbol": "bg_gameover2",
   "width": 20,
   "height": 18,
   "imageWidth": 160,
   "imageHeight": 144,
-  "filename": "outside.png",
+  "filename": "GameOver2.png",
   "tileColors": "",
   "autoColor": false
 }

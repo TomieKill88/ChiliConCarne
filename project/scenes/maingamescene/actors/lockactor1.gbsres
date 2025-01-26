@@ -132,6 +132,14 @@
                     "actorId": "$self$"
                   },
                   "id": "1a688706-9495-43ad-afba-339c8e86f2c1"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "04e08176-0ba7-49f3-ae1f-1796e094b397",
+                    "$actor[0]$": "d86ae4f2-3a14-4bd3-8af9-21b6da1d7a05"
+                  },
+                  "id": "5117079a-133f-4c4d-8e8a-f92aea996bf2"
                 }
               ],
               "false": []
