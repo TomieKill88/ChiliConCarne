@@ -17,67 +17,44 @@
   "symbol": "actor_3",
   "script": [
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "\"To open me, you\nmust solve a\nriddle.\""
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "80a18300-2d40-4299-8592-a9531d19c341"
-    },
-    {
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
-          "valueA": {
+          "type": "not",
+          "value": {
             "type": "variable",
-            "value": "6"
-          },
-          "valueB": {
-            "type": "number",
-            "value": 1
+            "value": "3"
           }
         },
-        "__collapseElse": false
+        "__collapseElse": true
       },
       "children": {
         "true": [
           {
-            "command": "EVENT_MENU",
+            "command": "EVENT_TEXT",
             "args": {
-              "variable": "8",
-              "items": 2,
-              "option1": "SMAAASH!!",
-              "option2": "Solve riddle.",
-              "option3": "",
-              "option4": "",
-              "option5": "",
-              "option6": "",
-              "option7": "",
-              "option8": "",
-              "cancelOnB": true,
-              "layout": "dialogue",
-              "cancelOnLastOption": true,
-              "__collapse": false
+              "text": [
+                "\"To open me, you\nmust solve a\nriddle.\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
-            "id": "577a2c19-804f-4b04-8313-35e00383ee74"
+            "id": "80a18300-2d40-4299-8592-a9531d19c341"
           },
           {
             "command": "EVENT_IF",
@@ -86,7 +63,7 @@
                 "type": "eq",
                 "valueA": {
                   "type": "variable",
-                  "value": "8"
+                  "value": "6"
                 },
                 "valueB": {
                   "type": "number",
@@ -94,48 +71,101 @@
                 }
               },
               "__collapseElse": false,
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_MENU",
                   "args": {
-                    "text": [
-                      "\"OWW! WTH, MAN!!\nThat's it!! Screw\nyou!!\"",
-                      "The lock led out\nan ear piercing\nscream."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
-                    "__collapse": true
+                    "variable": "8",
+                    "items": 2,
+                    "option1": "SMAAASH!!",
+                    "option2": "Solve riddle.",
+                    "option3": "",
+                    "option4": "",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue",
+                    "cancelOnLastOption": true,
+                    "__collapse": false
                   },
-                  "id": "125e01ed-432e-4b10-a27b-9315bf217ef4"
+                  "id": "577a2c19-804f-4b04-8313-35e00383ee74"
                 },
                 {
-                  "command": "EVENT_SET_VALUE",
+                  "command": "EVENT_IF",
                   "args": {
-                    "variable": "0",
-                    "value": {
-                      "type": "number",
-                      "value": 0
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "8"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
                     },
-                    "__collapse": true
+                    "__collapseElse": false,
+                    "__collapse": false
                   },
-                  "id": "14b15caf-edf2-4e47-8562-66d5e6b8ad3e"
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "\"OWW! WTH, MAN!!\nThat's it!! Screw\nyou!!\"",
+                            "The lock led out\nan ear piercing\nscream."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "125e01ed-432e-4b10-a27b-9315bf217ef4"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "0",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "__collapse": true
+                        },
+                        "id": "14b15caf-edf2-4e47-8562-66d5e6b8ad3e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "6bb0ad00-d359-41b1-95dd-c94afc5d240c",
+                          "__collapse": false
+                        },
+                        "id": "fcb0d04a-8546-4902-9478-4a6cc1296342"
+                      }
+                    ]
+                  },
+                  "id": "9da6eff8-ae74-4747-994d-dcdc254f0c13"
                 }
               ],
               "false": [
@@ -145,56 +175,48 @@
                     "customEventId": "6bb0ad00-d359-41b1-95dd-c94afc5d240c",
                     "__collapse": false
                   },
-                  "id": "fcb0d04a-8546-4902-9478-4a6cc1296342"
+                  "id": "b4a4bfb9-dd19-4a0a-847b-3851782e7647"
                 }
               ]
             },
-            "id": "9da6eff8-ae74-4747-994d-dcdc254f0c13"
-          }
-        ],
-        "false": [
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "6bb0ad00-d359-41b1-95dd-c94afc5d240c",
-              "__collapse": false
-            },
-            "id": "b4a4bfb9-dd19-4a0a-847b-3851782e7647"
-          }
-        ]
-      },
-      "id": "31af436c-e8b8-4495-ac4d-c804967fc4c3"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "9"
+            "id": "31af436c-e8b8-4495-ac4d-c804967fc4c3"
           },
-          "valueB": {
-            "type": "number",
-            "value": 1
-          }
-        },
-        "__collapseElse": true
-      },
-      "children": {
-        "true": [
           {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "command": "EVENT_IF",
             "args": {
-              "customEventId": "04e08176-0ba7-49f3-ae1f-1796e094b397",
-              "$actor[0]$": "d86ae4f2-3a14-4bd3-8af9-21b6da1d7a05"
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "9"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
             },
-            "id": "aa683583-bc46-48a5-9ab2-c81cf7bcad0d"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "04e08176-0ba7-49f3-ae1f-1796e094b397",
+                    "$actor[0]$": "d86ae4f2-3a14-4bd3-8af9-21b6da1d7a05"
+                  },
+                  "id": "aa683583-bc46-48a5-9ab2-c81cf7bcad0d"
+                }
+              ],
+              "false": []
+            },
+            "id": "26043efe-4942-405d-8545-783650157f02"
           }
         ],
         "false": []
       },
-      "id": "26043efe-4942-405d-8545-783650157f02"
+      "id": "f864cf3e-a13e-4b59-b2ab-b95e78d0f223"
     }
   ],
   "startScript": [],
@@ -203,6 +225,6 @@
   "hit2Script": [],
   "hit3Script": [],
   "x": 13,
-  "y": 11,
-  "_index": 3
+  "y": 9,
+  "_index": 2
 }

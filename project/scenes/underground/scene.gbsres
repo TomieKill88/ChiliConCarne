@@ -22,6 +22,13 @@
         "musicId": "cf8c2121-1654-4ce6-91dc-a8a1e02ad822"
       },
       "id": "fc3b1748-c815-4a7a-919d-ddec3ade6900"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7244b840-354e-400e-8775-706c6d5f545c"
+      },
+      "id": "a3c18753-5de3-47d1-b06f-b7470ebabd40"
     }
   ],
   "playerHit1Script": [],

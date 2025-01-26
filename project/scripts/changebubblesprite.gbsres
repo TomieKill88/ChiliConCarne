@@ -42,7 +42,7 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
+          "type": "gt",
           "valueA": {
             "type": "variable",
             "value": "0"
@@ -58,48 +58,15 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_STATE",
-            "args": {
-              "actorId": "0",
-              "spriteStateId": "GameOver",
-              "loopAnim": true,
-              "__collapse": true
-            },
-            "id": "7cbfe1c3-0f1e-48bc-8220-59a51db391e6"
-          },
-          {
-            "command": "EVENT_ACTOR_SET_DIRECTION",
-            "args": {
-              "actorId": "0",
-              "direction": {
-                "type": "direction",
-                "value": "up"
-              },
-              "__collapse": true
-            },
-            "id": "d3ca8a44-1ada-41f1-9878-597dfb1231a6"
-          },
-          {
             "command": "EVENT_SET_VALUE",
             "args": {
-              "variable": "3",
+              "variable": "0",
               "value": {
-                "type": "true"
-              },
-              "__collapse": true
+                "type": "variable",
+                "value": "V5"
+              }
             },
-            "id": "03dc2e61-d388-43c9-90a0-9ebe1e327c4f"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "2",
-              "value": {
-                "type": "true"
-              },
-              "__collapse": true
-            },
-            "id": "c564293c-dc57-4dfa-aa6d-ad4b931b69e1"
+            "id": "ec9f3c36-82a9-4e86-a267-81eb729b424e"
           }
         ],
         "false": [

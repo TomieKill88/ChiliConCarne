@@ -13,9 +13,9 @@
         "variable": "0",
         "value": {
           "type": "number",
-          "value": 10
+          "value": 20
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "eeda49fb-bcda-4d2b-a406-3dbcfc504ca3"
     },
@@ -25,7 +25,7 @@
         "variable": "1",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 1
         },
         "__collapse": true
       },

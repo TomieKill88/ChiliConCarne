@@ -57,6 +57,24 @@
               "actorId": "0",
               "x": {
                 "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "71933fb0-8918-4e24-92fe-f7382889f78b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
                 "value": 9
               },
               "y": {
@@ -128,7 +146,8 @@
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
             "args": {
-              "actorId": "0"
+              "actorId": "0",
+              "__collapse": true
             },
             "id": "c304662c-1dbb-4ad3-a47c-7153adff857a"
           },

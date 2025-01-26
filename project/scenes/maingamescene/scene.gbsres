@@ -13,7 +13,7 @@
   "tilesetId": "",
   "paletteIds": [
     "",
-    ""
+    "default-bg-4"
   ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
@@ -52,7 +52,8 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -82,7 +83,8 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
